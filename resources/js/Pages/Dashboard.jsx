@@ -14,7 +14,7 @@ export default function Dashboard({ auth }) {
         useState(false);
 
     return (
-        <div className="flex flex-col md:flex-row container p-12">
+        <div className="flex flex-col-reverse md:flex-row container p-12">
             {/* left-content */}
             <div className="md:w-[20%] border">
                 <div className="max-w-7xl">

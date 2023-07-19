@@ -19,7 +19,6 @@ export default function Authenticated({ user, header, children }) {
             <nav className="bg-white border-b border-gray-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between border-b-2">
-                        <SearchBar />
                         {/*
                         <div className="flex">
                             <div className="shrink-0 flex items-center">
@@ -41,11 +40,13 @@ export default function Authenticated({ user, header, children }) {
                                 <Dropdown>
                                     <Dropdown.Trigger>
                                         <span className="inline-flex items-center rounded-md pl-4 pt-2">
-                                            <img
-                                                src="/images/ProfileImagePlaceholder.png"
-                                                alt="profileimage"
-                                                className="h-12 w-12 ring-1 rounded-full"
-                                            />
+                                            <a href="/">
+                                                <img
+                                                    src="/images/ProfileImagePlaceholder.png"
+                                                    alt="profileimage"
+                                                    className="h-12 w-12 ring-1 rounded-full"
+                                                />
+                                            </a>
                                             <button
                                                 type="button"
                                                 className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150"
